@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Scroll Spy | Index</title>
+		
+		<!-- CDN versions of jQuery and Popper.js -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		
+		<!-- Compiled versions of CSS and JS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+		<style>
+			body { position: relative; top: 55px; }
+			div { height: 700px; margin: 0; }
+			#fat { background-color: lightsalmon; }
+			#mdo { background-color: lightpink; }
+			#one { background-color: cornflowerblue; }
+			#two { background-color: cadetblue; }		
+			#three { background-color: lightblue; }		
+		</style>
+	</head>
+
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<nav id="navbar-example2" class="navbar navbar-light bg-light fixed-top">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <ul class="nav nav-pills">
+		    <li class="nav-item">
+		      <a class="nav-link" href="#fat">@fat</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#mdo">@mdo</a>
+		    </li>
+		    <li class="nav-item dropdown">
+		      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+		      <div class="dropdown-menu">
+		        <a class="dropdown-item" href="#one">one</a>
+		        <a class="dropdown-item" href="#two">two</a>
+		        <div role="separator" class="dropdown-divider"></div>
+		        <a class="dropdown-item" href="#three">three</a>
+		      </div>
+		    </li>
+		  </ul>
+		</nav>
+		<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+			<div id="fat">
+			  <h4>@fat</h4>
+			  <p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad voluptates, ratione adipisci iste consequatur, repellendus et consequuntur eius, fuga id at quos? Cum perspiciatis, totam enim quibusdam dignissimos accusamus?
+			  </p>
+			</div>
+
+			<div id="mdo">
+			  <h4>@mdo</h4>
+			  <p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad voluptates, ratione adipisci iste consequatur, repellendus et consequuntur eius, fuga id at quos? Cum perspiciatis, totam enim quibusdam dignissimos accusamus?
+			  </p>
+			</div>
+
+			<div id="one">
+			  <h4>one</h4>
+			  <p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad voluptates, ratione adipisci iste consequatur, repellendus et consequuntur eius, fuga id at quos? Cum perspiciatis, totam enim quibusdam dignissimos accusamus?
+			  </p>
+			</div>
+
+			<div id="two">
+			  <h4>two</h4>
+			  <p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad voluptates, ratione adipisci iste consequatur, repellendus et consequuntur eius, fuga id at quos? Cum perspiciatis, totam enim quibusdam dignissimos accusamus?
+			  </p>
+			</div>
+
+			<div id="three">
+			  <h4>three</h4>
+			  <p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ad voluptates, ratione adipisci iste consequatur, repellendus et consequuntur eius, fuga id at quos? Cum perspiciatis, totam enim quibusdam dignissimos accusamus?
+			  </p>
+			</div>
+		</div>
+	</body>
+</html>
